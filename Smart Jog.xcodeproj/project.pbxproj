@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524736C02542A23B002B1096 /* JoggingHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524736BF2542A23B002B1096 /* JoggingHistoryViewModel.swift */; };
+		524736C32542BD25002B1096 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524736C22542BD25002B1096 /* HistoryViewController.swift */; };
+		524736C72542C7CF002B1096 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524736C52542C7CF002B1096 /* HistoryTableViewCell.swift */; };
+		524736C82542C7CF002B1096 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524736C62542C7CF002B1096 /* HistoryTableViewCell.xib */; };
+		52BCC577253F3C3900705767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCC576253F3C3900705767 /* AppDelegate.swift */; };
+		52BCC579253F3C3900705767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCC578253F3C3900705767 /* SceneDelegate.swift */; };
+		52BCC57B253F3C3900705767 /* LoactionTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCC57A253F3C3900705767 /* LoactionTrackingViewController.swift */; };
+		52BCC57E253F3C3900705767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BCC57C253F3C3900705767 /* Main.storyboard */; };
+		52BCC581253F3C3900705767 /* Smart_Jog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52BCC57F253F3C3900705767 /* Smart_Jog.xcdatamodeld */; };
+		52BCC583253F3C3D00705767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BCC582253F3C3D00705767 /* Assets.xcassets */; };
+		52BCC586253F3C3D00705767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BCC584253F3C3D00705767 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		524736BF2542A23B002B1096 /* JoggingHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoggingHistoryViewModel.swift; sourceTree = "<group>"; };
+		524736C22542BD25002B1096 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		524736C52542C7CF002B1096 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		524736C62542C7CF002B1096 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		526F7AF42541D0F600D89796 /* mapstogpx20201022_140201.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mapstogpx20201022_140201.gpx; path = ../../Downloads/mapstogpx20201022_140201.gpx; sourceTree = "<group>"; };
+		526F7AF52541D19D00D89796 /* mapstogpx20201022_144107.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mapstogpx20201022_144107.gpx; path = ../../Downloads/mapstogpx20201022_144107.gpx; sourceTree = "<group>"; };
+		526F7AF62541D4C500D89796 /* default.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = default.gpx; path = ../../Downloads/default.gpx; sourceTree = "<group>"; };
+		52BCC573253F3C3900705767 /* Smart Jog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Jog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BCC576253F3C3900705767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52BCC578253F3C3900705767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52BCC57A253F3C3900705767 /* LoactionTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoactionTrackingViewController.swift; sourceTree = "<group>"; };
+		52BCC57D253F3C3900705767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52BCC580253F3C3900705767 /* Smart_Jog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smart_Jog.xcdatamodel; sourceTree = "<group>"; };
+		52BCC582253F3C3D00705767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52BCC585253F3C3D00705767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52BCC587253F3C3D00705767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52BCC570253F3C3900705767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		524736BD25429F20002B1096 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52BCC57F253F3C3900705767 /* Smart_Jog.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		524736C12542A242002B1096 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				524736BF2542A23B002B1096 /* JoggingHistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		524736C42542C7AA002B1096 /* HistoryCellView */ = {
+			isa = PBXGroup;
+			children = (
+				524736C52542C7CF002B1096 /* HistoryTableViewCell.swift */,
+				524736C62542C7CF002B1096 /* HistoryTableViewCell.xib */,
+			);
+			path = HistoryCellView;
+			sourceTree = "<group>";
+		};
+		52BCC56A253F3C3900705767 = {
+			isa = PBXGroup;
+			children = (
+				526F7AF62541D4C500D89796 /* default.gpx */,
+				526F7AF52541D19D00D89796 /* mapstogpx20201022_144107.gpx */,
+				526F7AF42541D0F600D89796 /* mapstogpx20201022_140201.gpx */,
+				52BCC575253F3C3900705767 /* Smart Jog */,
+				52BCC574253F3C3900705767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52BCC574253F3C3900705767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BCC573253F3C3900705767 /* Smart Jog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BCC575253F3C3900705767 /* Smart Jog */ = {
+			isa = PBXGroup;
+			children = (
+				524736C12542A242002B1096 /* ViewModel */,
+				524736BD25429F20002B1096 /* Model */,
+				52BCC58D253F3E7A00705767 /* View */,
+				52BCC58E253F3E8900705767 /* Controller */,
+				52BCC576253F3C3900705767 /* AppDelegate.swift */,
+				52BCC578253F3C3900705767 /* SceneDelegate.swift */,
+				52BCC582253F3C3D00705767 /* Assets.xcassets */,
+				52BCC587253F3C3D00705767 /* Info.plist */,
+			);
+			path = "Smart Jog";
+			sourceTree = "<group>";
+		};
+		52BCC58D253F3E7A00705767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				524736C42542C7AA002B1096 /* HistoryCellView */,
+				52BCC584253F3C3D00705767 /* LaunchScreen.storyboard */,
+				52BCC57C253F3C3900705767 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52BCC58E253F3E8900705767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52BCC57A253F3C3900705767 /* LoactionTrackingViewController.swift */,
+				524736C22542BD25002B1096 /* HistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52BCC572253F3C3900705767 /* Smart Jog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BCC58A253F3C3D00705767 /* Build configuration list for PBXNativeTarget "Smart Jog" */;
+			buildPhases = (
+				52BCC56F253F3C3900705767 /* Sources */,
+				52BCC570253F3C3900705767 /* Frameworks */,
+				52BCC571253F3C3900705767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Jog";
+			productName = "Smart Jog";
+			productReference = 52BCC573253F3C3900705767 /* Smart Jog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52BCC56B253F3C3900705767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Christy_Beena;
+				TargetAttributes = {
+					52BCC572253F3C3900705767 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 52BCC56E253F3C3900705767 /* Build configuration list for PBXProject "Smart Jog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52BCC56A253F3C3900705767;
+			productRefGroup = 52BCC574253F3C3900705767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52BCC572253F3C3900705767 /* Smart Jog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52BCC571253F3C3900705767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BCC586253F3C3D00705767 /* LaunchScreen.storyboard in Resources */,
+				52BCC583253F3C3D00705767 /* Assets.xcassets in Resources */,
+				524736C82542C7CF002B1096 /* HistoryTableViewCell.xib in Resources */,
+				52BCC57E253F3C3900705767 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52BCC56F253F3C3900705767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BCC581253F3C3900705767 /* Smart_Jog.xcdatamodeld in Sources */,
+				52BCC57B253F3C3900705767 /* LoactionTrackingViewController.swift in Sources */,
+				524736C72542C7CF002B1096 /* HistoryTableViewCell.swift in Sources */,
+				524736C02542A23B002B1096 /* JoggingHistoryViewModel.swift in Sources */,
+				524736C32542BD25002B1096 /* HistoryViewController.swift in Sources */,
+				52BCC577253F3C3900705767 /* AppDelegate.swift in Sources */,
+				52BCC579253F3C3900705767 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52BCC57C253F3C3900705767 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BCC57D253F3C3900705767 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52BCC584253F3C3D00705767 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BCC585253F3C3D00705767 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52BCC588253F3C3D00705767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52BCC589253F3C3D00705767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52BCC58B253F3C3D00705767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Smart Jog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Beena-Christy.Smart-Jog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52BCC58C253F3C3D00705767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Smart Jog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Beena-Christy.Smart-Jog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52BCC56E253F3C3900705767 /* Build configuration list for PBXProject "Smart Jog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BCC588253F3C3D00705767 /* Debug */,
+				52BCC589253F3C3D00705767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BCC58A253F3C3D00705767 /* Build configuration list for PBXNativeTarget "Smart Jog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BCC58B253F3C3D00705767 /* Debug */,
+				52BCC58C253F3C3D00705767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52BCC57F253F3C3900705767 /* Smart_Jog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52BCC580253F3C3900705767 /* Smart_Jog.xcdatamodel */,
+			);
+			currentVersion = 52BCC580253F3C3900705767 /* Smart_Jog.xcdatamodel */;
+			path = Smart_Jog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52BCC56B253F3C3900705767 /* Project object */;
+}
